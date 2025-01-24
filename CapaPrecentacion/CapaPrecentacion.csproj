@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB1D572A-84DC-469A-A400-580F3C153CEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaPrecentacion</RootNamespace>
+    <AssemblyName>CapaPrecentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CapaPrecentacion.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvertenciaEgresados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvertenciaEgresados.Designer.cs">
+      <DependentUpon>AdvertenciaEgresados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="advertenciaoffi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advertenciaoffi.Designer.cs">
+      <DependentUpon>advertenciaoffi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cerrarsesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cerrarsesion.Designer.cs">
+      <DependentUpon>Cerrarsesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contraseña.Designer.cs">
+      <DependentUpon>Contraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ERRORCRITICOREINSCRIPCIONES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ERRORCRITICOREINSCRIPCIONES.Designer.cs">
+      <DependentUpon>ERRORCRITICOREINSCRIPCIONES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorInscripcionalumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorInscripcionalumno.Designer.cs">
+      <DependentUpon>ErrorInscripcionalumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Errornoreinscrito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Errornoreinscrito.Designer.cs">
+      <DependentUpon>Errornoreinscrito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Informacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Informacion.Designer.cs">
+      <DependentUpon>Informacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscripciones.Designer.cs">
+      <DependentUpon>Inscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inscripcionescompleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscripcionescompleta.Designer.cs">
+      <DependentUpon>Inscripcionescompleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPrincipal.Designer.cs">
+      <DependentUpon>LoginPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginProfesores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginProfesores.Designer.cs">
+      <DependentUpon>LoginProfesores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalProfesor.Designer.cs">
+      <DependentUpon>PrincipalProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrincipalUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrincipalUsuarios.Designer.cs">
+      <DependentUpon>PrincipalUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reinscripciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reinscripciones.Designer.cs">
+      <DependentUpon>Reinscripciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resinscritosaviso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resinscritosaviso.Designer.cs">
+      <DependentUpon>Resinscritosaviso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sinopadres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinopadres.Designer.cs">
+      <DependentUpon>Sinopadres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizadordealumnos\egresados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizadordealumnos\egresados.Designer.cs">
+      <DependentUpon>egresados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizadordealumnos\quinto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizadordealumnos\quinto.Designer.cs">
+      <DependentUpon>quinto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizadordealumnos\segundo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizadordealumnos\segundo.Designer.cs">
+      <DependentUpon>segundo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizadordealumnos\sexto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizadordealumnos\sexto.Designer.cs">
+      <DependentUpon>sexto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizar.Designer.cs">
+      <DependentUpon>Visualizar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdvertenciaEgresados.resx">
+      <DependentUpon>AdvertenciaEgresados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advertenciaoffi.resx">
+      <DependentUpon>advertenciaoffi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cerrarsesion.resx">
+      <DependentUpon>Cerrarsesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contraseña.resx">
+      <DependentUpon>Contraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERRORCRITICOREINSCRIPCIONES.resx">
+      <DependentUpon>ERRORCRITICOREINSCRIPCIONES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorInscripcionalumno.resx">
+      <DependentUpon>ErrorInscripcionalumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Errornoreinscrito.resx">
+      <DependentUpon>Errornoreinscrito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Informacion.resx">
+      <DependentUpon>Informacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscripciones.resx">
+      <DependentUpon>Inscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscripcionescompleta.resx">
+      <DependentUpon>Inscripcionescompleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPrincipal.resx">
+      <DependentUpon>LoginPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginProfesores.resx">
+      <DependentUpon>LoginProfesores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalProfesor.resx">
+      <DependentUpon>PrincipalProfesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrincipalUsuarios.resx">
+      <DependentUpon>PrincipalUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reinscripciones.resx">
+      <DependentUpon>Reinscripciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resinscritosaviso.resx">
+      <DependentUpon>Resinscritosaviso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinopadres.resx">
+      <DependentUpon>Sinopadres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizadordealumnos\egresados.resx">
+      <DependentUpon>egresados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizadordealumnos\quinto.resx">
+      <DependentUpon>quinto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizadordealumnos\segundo.resx">
+      <DependentUpon>segundo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visualizadordealumnos\sexto.resx">
+      <DependentUpon>sexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizar.resx">
+      <DependentUpon>Visualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{a48b0e7e-3580-4af9-8154-d7d957d90508}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Professor-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teachers_35749.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon cerrar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\587e9a28614751fd67d83da8e676574b.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidalgo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mineral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-Menu-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar_sesion_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e0f86655fa163345a68856fde26c4415.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abajp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HECKS logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copyright_naranja.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
